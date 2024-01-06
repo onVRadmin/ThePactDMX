@@ -259,159 +259,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Online/OnlineSubsystemOculus/OnlineSubsystemOculus.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 2,
-				"VersionName": "1.32.0",
-				"FriendlyName": "Online Subsystem Oculus",
-				"Description": "Access to Oculus platform",
-				"Category": "Online Platform",
-				"CreatedBy": "Oculus",
-				"CreatedByURL": "https://www.oculus.com/",
-				"DocsURL": "https://developer.oculus.com/documentation/platform/latest/concepts/pgsg-unreal-gsg/",
-				"MarketplaceURL": "",
-				"SupportURL": "https://forums.oculusvr.com/developer/categories/platform-sdk",
-				"EnabledByDefault": false,
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "OnlineSubsystemOculus",
-						"Type": "Runtime",
-						"LoadingPhase": "Default",
-						"WhitelistPlatforms": [
-							"Win64",
-							"Android"
-						]
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "OnlineSubsystem",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystemUtils",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Online Subsystem",
-				"Description": "Shared code for interacting online subsystem implementations.",
-				"Category": "Online Platform",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "OnlineSubsystem",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					}
-				],
-				"LocalizationTargets": [
-					{
-						"Name": "OnlineSubsystem",
-						"LoadingPolicy": "Always"
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Online/OnlineSubsystemUtils/OnlineSubsystemUtils.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Online Subsystem Utils",
-				"Description": "Shared code for interacting online subsystem implementations.",
-				"Category": "Online Platform",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "OnlineSubsystemUtils",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					},
-					{
-						"Name": "OnlineBlueprintSupport",
-						"Type": "UncookedOnly",
-						"LoadingPhase": "PostConfigInit"
-					}
-				],
-				"LocalizationTargets": [
-					{
-						"Name": "OnlineSubsystemUtils",
-						"LoadingPolicy": "Always"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "OnlineSubsystem",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Runtime/Oculus/OculusAudio/OculusAudio.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.34.0",
-				"FriendlyName": "Oculus Audio",
-				"Description": "Oculus audio spatialization",
-				"Category": "Audio",
-				"CreatedBy": "Oculus",
-				"CreatedByURL": "https://www.oculus.com/",
-				"DocsURL": "https://developer.oculus.com/documentation/unreal/latest/concepts/unreal-audio/",
-				"MarketplaceURL": "",
-				"SupportURL": "https://forums.oculusvr.com/developer/categories/audio-development",
-				"EnabledByDefault": false,
-				"CanContainContent": true,
-				"Modules": [
-					{
-						"Name": "OculusAudio",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit",
-						"WhitelistPlatforms": [
-							"Win64",
-							"Android"
-						]
-					},
-					{
-						"Name": "OculusAudioEditor",
-						"Type": "Editor",
-						"LoadingPhase": "PostEngineInit",
-						"WhitelistPlatforms": [
-							"Win64"
-						]
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/VirtualProduction/DMX/DMXFixtures/DMXFixtures.uplugin",
 			"Descriptor": 
 			{
@@ -2230,6 +2077,38 @@
 			}
 		},
 		{
+			"File": "../../../Engine/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Online Subsystem",
+				"Description": "Shared code for interacting online subsystem implementations.",
+				"Category": "Online Platform",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "OnlineSubsystem",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					}
+				],
+				"LocalizationTargets": [
+					{
+						"Name": "OnlineSubsystem",
+						"LoadingPolicy": "Always"
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/Runtime/AndroidPermission/AndroidPermission.uplugin",
 			"Descriptor": 
 			{
@@ -2287,6 +2166,49 @@
 					},
 					{
 						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Online/OnlineSubsystemUtils/OnlineSubsystemUtils.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Online Subsystem Utils",
+				"Description": "Shared code for interacting online subsystem implementations.",
+				"Category": "Online Platform",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					},
+					{
+						"Name": "OnlineBlueprintSupport",
+						"Type": "UncookedOnly",
+						"LoadingPhase": "PostConfigInit"
+					}
+				],
+				"LocalizationTargets": [
+					{
+						"Name": "OnlineSubsystemUtils",
+						"LoadingPolicy": "Always"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "OnlineSubsystem",
 						"Enabled": true
 					}
 				]
@@ -2732,6 +2654,76 @@
 						"Name": "MobilePatchingUtils",
 						"Type": "Runtime",
 						"LoadingPhase": "Default"
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Runtime/Oculus/OculusVR/OculusVR.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.59.0",
+				"FriendlyName": "Oculus VR",
+				"Description": "Support for Oculus headsets and controllers",
+				"Category": "Virtual Reality",
+				"CreatedBy": "Oculus",
+				"CreatedByURL": "https://www.oculus.com/",
+				"DocsURL": "https://developer.oculus.com/documentation/unreal/latest/concepts/unreal-engine/",
+				"MarketplaceURL": "",
+				"SupportURL": "https://forums.oculusvr.com/developer/categories/unreal",
+				"EnabledByDefault": true,
+				"CanContainContent": true,
+				"SupportedTargetPlatforms": [
+					"Win32",
+					"Win64",
+					"Android"
+				],
+				"Modules": [
+					{
+						"Name": "OculusHMD",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Android"
+						]
+					},
+					{
+						"Name": "OculusInput",
+						"Type": "Runtime",
+						"LoadingPhase": "Default",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Android"
+						]
+					},
+					{
+						"Name": "OculusMR",
+						"Type": "Runtime",
+						"LoadingPhase": "PostEngineInit",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Android"
+						]
+					},
+					{
+						"Name": "OculusEditor",
+						"Type": "Editor",
+						"LoadingPhase": "Default",
+						"WhitelistPlatforms": [
+							"Win64"
+						]
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ProceduralMeshComponent",
+						"Enabled": true
 					}
 				]
 			}
